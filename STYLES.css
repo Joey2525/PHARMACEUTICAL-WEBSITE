@@ -1,0 +1,230 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #000000; 
+    line-height: 1.5;
+    background-image: url('https://t4.ftcdn.net/jpg/15/70/09/07/360_F_1570090720_euiJzBUxEIb7JKAI1YJm6qJsbgEZovsM.jpg');
+    background-size: cover;
+}
+/* Navigation Bar */
+.navbar {
+    background-color: #0047ab; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #0066cc;
+    border-radius: 5px;
+}
+
+
+.page {
+    margin-top: 80px; /* Space for fixed navbar */
+    padding: 20px;
+    display: none; /* Hidden by default, shown by JavaScript */
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #000000;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #0066cc; /* Lighter blue */
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #0088ff; /* Even lighter blue */
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Home page boxes */
+.home-box {
+    background-color: #e6f2ff; /* Very light blue */
+    border: 2px solid #0047ab; /* Blue border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tables */
+.table-container {
+    margin: 20px 0;
+    overflow-x: auto; /* For small screens */
+}
+
+.product-table, .research-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.product-table th, .product-table td,
+.research-table th, .research-table td {
+    border: 1px solid #0047ab; /* Blue borders */
+    padding: 10px;
+    text-align: left;
+}
+
+.product-table th, .research-table th {
+    background-color: #cce5ff; /* Light blue */
+    color: #0047ab; /* Blue text */
+    font-weight: bold;
+}
+
+.product-table tr:nth-child(even),
+.research-table tr:nth-child(even) {
+    background-color: #f0f8ff; /* Very light blue */
+}
+
+/* About section */
+.about-section {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0047ab;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Product list */
+.product-list {
+    background-color: #e8f4ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Research info */
+.research-info {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border: 1px dashed #0047ab;
+    margin: 20px 0;
+}
+
+.research-steps {
+    background-color: #e6f2ff;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Contact info */
+.contact-info {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border: 2px solid #0047ab;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.contact-hours {
+    background-color: #e6f2ff;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.departments {
+    background-color: #d9edf7;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #0047ab; /* Blue color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+/* Simple responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .page {
+        margin-top: 120px; /* More space for navbar on mobile */
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+}
